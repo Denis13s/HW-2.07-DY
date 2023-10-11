@@ -9,21 +9,28 @@ import UIKit
 
 class TimCookViewController: UIViewController {
 
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var textDescription: UILabel!
+    
+    private var bio: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.addVerticalGradientLayer()
+        getData()
+        image.layer.cornerRadius = 50
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let bioVC = segue.destination as? BioViewController {
+            bioVC.bio = self.bio
+        }
     }
-    */
-
+    
+    private func getData() {
+        let person = DataService.shared.getPersonData()
+        image.image = UIImage(named: person.image)
+        textDescription.text = "Name: \(person.name)\nSurname: \(person.surname)\nCompany:  \(person.company)\nFunction: \(person.function)"
+        bio = person.bio
+    }
 }
