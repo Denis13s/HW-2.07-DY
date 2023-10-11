@@ -13,6 +13,8 @@
 		044247BF2AD6BDF900200BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044247BD2AD6BDF900200BAF /* Main.storyboard */; };
 		044247C12AD6BDFB00200BAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044247C02AD6BDFB00200BAF /* Assets.xcassets */; };
 		044247C42AD6BDFB00200BAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044247C22AD6BDFB00200BAF /* LaunchScreen.storyboard */; };
+		044247CC2AD6C21E00200BAF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044247CB2AD6C21E00200BAF /* DataService.swift */; };
+		044247CE2AD6C47400200BAF /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044247CD2AD6C47400200BAF /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		044247C02AD6BDFB00200BAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044247C32AD6BDFB00200BAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044247C52AD6BDFB00200BAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044247CB2AD6C21E00200BAF /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		044247CD2AD6C47400200BAF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		044247AB2AD6BDF900200BAF = {
 			isa = PBXGroup;
 			children = (
+				044247CD2AD6C47400200BAF /* WelcomeViewController.swift */,
 				044247B62AD6BDF900200BAF /* HW-2.07-DY */,
 				044247B52AD6BDF900200BAF /* Products */,
 			);
@@ -56,6 +61,7 @@
 		044247B62AD6BDF900200BAF /* HW-2.07-DY */ = {
 			isa = PBXGroup;
 			children = (
+				044247CB2AD6C21E00200BAF /* DataService.swift */,
 				044247B72AD6BDF900200BAF /* AppDelegate.swift */,
 				044247B92AD6BDF900200BAF /* SceneDelegate.swift */,
 				044247BB2AD6BDF900200BAF /* ViewController.swift */,
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				044247BC2AD6BDF900200BAF /* ViewController.swift in Sources */,
+				044247CE2AD6C47400200BAF /* WelcomeViewController.swift in Sources */,
 				044247B82AD6BDF900200BAF /* AppDelegate.swift in Sources */,
 				044247BA2AD6BDF900200BAF /* SceneDelegate.swift in Sources */,
+				044247CC2AD6C21E00200BAF /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

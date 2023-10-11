@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct DataService {
+    static let shared = DataService()
+    let userName = "User"
+    let password = "Password"
+}
